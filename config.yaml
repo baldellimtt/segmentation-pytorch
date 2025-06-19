@@ -87,9 +87,9 @@ augmentation:
 
 # Data paths and configuration
 data:
-  splits_dir:  C:/Users/Andrea/Desktop/segmentation-pytorch/dataset_creation  # Directory containing train.txt, val.txt, test.txt
-  images_dir: C:/Users/Andrea/Desktop/images  # Update with your images path
-  masks_dir: C:/Users/Andrea/Desktop/masks    # Update with your masks path
+  splits_dir:  ../segmentation-pytorch/dataset_creation  # Directory containing train.txt, val.txt, test.txt
+  images_dir: ../images  # Update with your images path
+  masks_dir: ../masks    # Update with your masks path
 
 # Dataset split configuration
 split_ratios:
@@ -105,9 +105,9 @@ output:
   mode: min
 
 inference:
-  model_path: C:/Users/Andrea/Desktop/segmentation-pytorch/checkpoints/best_model-v3.ckpt
-  input_images_dir: C:/Users/Andrea/Desktop/segmentation-pytorch/1870_images_test_seg
-  outputs_dir: C:/Users/Andrea/Desktop/output_1870_images_test_seg
+  model_path: ../checkpoints/best_model-v3.ckpt
+  input_images_dir: ../images_test
+  outputs_dir: ../output_images
 
 # Miscellaneous
 show_augmentation_samples: true 
