@@ -87,7 +87,6 @@ augmentation:
 
 # Data paths and configuration
 data:
-  splits_dir:  ../segmentation-pytorch/dataset_creation  # Directory containing train.txt, val.txt, test.txt
   images_dir: ../images  # Update with your images path
   masks_dir: ../masks    # Update with your masks path
 
@@ -98,7 +97,7 @@ split_ratios:
   test: 0.15   # 15% for testing
 
 output:
-  checkpoint_dir: C:/Users/Andrea/Desktop/segmentation-pytorch/checkpoints
+  checkpoint_dir: ../segmentation-pytorch/checkpoints
   checkpoint_name: best_model
   monitor: valid_loss
   save_top_k: 1
