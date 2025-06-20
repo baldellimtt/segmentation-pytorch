@@ -17,7 +17,6 @@ dependencies:
       - albumentations==2.0.6
       - ultralytics>=8.3.94,<9.0.0
       - neptune>=1.13.0,<2.0.0
-      - comet-ml>=3.49.5,<4.0.0
       - line-profiler-pycharm>=1.2.0,<2.0.0
       - python-dotenv>=1.1.0,<2.0.0
       - torch>=2.6.0,<3.0.0
