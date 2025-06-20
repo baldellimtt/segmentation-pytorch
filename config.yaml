@@ -87,8 +87,8 @@ augmentation:
 
 # Data paths and configuration
 data:
-  images_dir: ../images  # Update with your images path
-  masks_dir: ../masks    # Update with your masks path
+  images_dir: images  # Update with your images path
+  masks_dir: masks    # Update with your masks path
 
 # Dataset split configuration
 split_ratios:
@@ -97,7 +97,7 @@ split_ratios:
   test: 0.15   # 15% for testing
 
 output:
-  checkpoint_dir: ../segmentation-pytorch/checkpoints
+  checkpoint_dir: segmentation-pytorch/checkpoints
   checkpoint_name: best_model
   monitor: valid_loss
   save_top_k: 1
